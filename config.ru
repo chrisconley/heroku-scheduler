@@ -3,7 +3,7 @@ require 'resque_scheduler'
 require './config_resque.rb'
 
 use Rack::Auth::Basic do |username, password|
-  [username, password] == [ENV["RESQUEWEB_LOGIN"], ENV["RESQUEWEB_PWD"]]
+  [username, password] == ['admin', 'password']
 end
 
 run Rack::URLMap.new \
