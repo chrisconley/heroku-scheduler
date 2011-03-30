@@ -8,6 +8,6 @@ sandbox_hit_manager:
 production_hit_manager:
   cron: */1 * * * *
   class: HitManager
-  args: nil
+  args: ~
   description: Manage hits in production
   queue: hit_manager
