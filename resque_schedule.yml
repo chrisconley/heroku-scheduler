@@ -1,13 +1,13 @@
 sandbox_hit_manager:
   cron: */5 * * * *
   class: HitManager
-  args: true
+  args: sandbox
   description: Manage hits in sandbox
   queue: hit_manager
 
 production_hit_manager:
   cron: */1 * * * *
   class: HitManager
-  args: ~
+  args: production
   description: Manage hits in production
   queue: hit_manager
