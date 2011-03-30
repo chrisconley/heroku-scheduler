@@ -1,13 +1,6 @@
-sandbox_hit_manager:
-  cron: */5 * * * *
-  class: HitManager
-  args: true
-  description: Manage hits in sandbox
-  queue: hit_manager
-
-production_hit_manager:
+breakfast:
   cron: */1 * * * *
   class: HitManager
-  args: false
-  description: Manage hits in production
-  queue: hit_manager
+  args: true
+  description: Breakfast
+  queue: test
